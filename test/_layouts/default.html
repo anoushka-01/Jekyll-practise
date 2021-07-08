@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: "en-UK" }}">
+ 
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>{{ page.title }} - {{ site.title }}</title> -->
+    <title>{{ page.title }}</title>
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+
+  <body>
+    <p>Hello World!</p>
+    {% include navigation.html %}
+
+    {{ content }}
+
+    {{ page.my_num }}
+    {{ page.my_text }}
+  </body>
+
+</html>
